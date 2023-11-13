@@ -17,7 +17,7 @@
 #include <QtCore/QBuffer>
 #include <QtCore/QBytearray>
 #include <QtCore/QCoreApplication>
-#include <QtWidgets/QAction>
+#include <QtGui/QAction>
 
 #include <filesystem>
 
