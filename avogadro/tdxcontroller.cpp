@@ -17,7 +17,12 @@
 #include <QtCore/QBuffer>
 #include <QtCore/QBytearray>
 #include <QtCore/QCoreApplication>
-#include <QtGui/QAction>
+
+#if QT_VERSION >= 0x060000
+    #include <QtGui/QAction>
+#else
+    #include <QtWidgets/QAction>
+#endif
 
 #include <filesystem>
 
