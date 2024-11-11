@@ -444,7 +444,10 @@ void MainWindow::setupInterface()
   if (!QIcon::hasThemeIcon("document-new"))
     QIcon::setThemeName("fallback");
 
-  QIcon icon(":/icons/avogadro2.svg");
+  QIcon icon = QIcon::fromTheme(
+    "org.openchemistry.Avogadro2",
+    QIcon(":/icons/avogadro2.svg")
+  );
   setWindowIcon(icon);
 
 #ifndef Q_OS_MAC
