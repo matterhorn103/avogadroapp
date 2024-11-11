@@ -444,7 +444,7 @@ void MainWindow::setupInterface()
   if (!QIcon::hasThemeIcon("document-new"))
     QIcon::setThemeName("fallback");
 
-  QIcon icon(":/icons/avogadro.png");
+  QIcon icon(":/icons/avogadro2.svg");
   setWindowIcon(icon);
 
 #ifndef Q_OS_MAC
